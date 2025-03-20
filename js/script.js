@@ -122,4 +122,35 @@ document.addEventListener("DOMContentLoaded", function () {
     // Guardar el resumen en localStorage
     localStorage.setItem("treeSummary", JSON.stringify(summary));
   }
+
+  document
+    .getElementById("generateEstimateBtn")
+    .addEventListener("click", function () {
+      const clientName = document.getElementById("clientName").value.trim();
+      const clientPhone = document.getElementById("clientPhone").value.trim();
+      const clientAddress = document
+        .getElementById("clientAddress")
+        .value.trim();
+      const clientEmail = document.getElementById("clientEmail").value.trim();
+
+      // Validar que todos los campos están llenos
+      if (!clientName || !clientPhone || !clientAddress || !clientEmail) {
+        alert("Please fill in all required fields.");
+        return;
+      }
+
+      // Guardar en localStorage para que estimate.html pueda recuperar los datos
+      localStorage.setItem(
+        "clientInfo",
+        JSON.stringify({
+          name: clientName,
+          phone: clientPhone,
+          address: clientAddress,
+          email: clientEmail,
+        })
+      );
+
+      // Redirigir a la página del estimado
+      window.open("estimate.html", "_blank");
+    });
 });

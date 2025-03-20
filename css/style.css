@@ -1,6 +1,6 @@
 :root {
-  --primary: #000000;
-  --accent: #1570f8;
+  --primary: #089d70;
+  --accent: #e46c0c;
   --contrast: #161616;
   --base: #cec8c8;
 }
@@ -65,7 +65,7 @@ button {
 }
 
 button:hover {
-  background-color: var(--accent);
+  background-color: var(--contrast);
 }
 
 img {

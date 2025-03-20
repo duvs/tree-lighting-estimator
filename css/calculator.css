@@ -66,3 +66,18 @@ main {
 #summary-list li:last-child {
   border-bottom: none;
 }
+
+.client-info {
+  margin: 30px 0;
+}
+
+.client-info input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: none;
+  border-bottom: 1px solid var(--base);
+  background: white;
+  transition: all 0.3s ease;
+}

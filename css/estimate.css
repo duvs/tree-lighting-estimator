@@ -1,0 +1,57 @@
+.estimate {
+  width: 800px;
+  margin: 20px auto;
+  padding: 30px;
+  border-radius: 10px;
+  background: white;
+  text-align: left;
+}
+
+#pdfHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 15px;
+}
+
+#pdfHeader img {
+  max-width: 180px;
+}
+
+.client-info {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.estimate-details {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+#summary-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+#summary-list li {
+  padding: 5px 0;
+  font-size: 16px;
+  border-bottom: 1px solid #ddd;
+}
+
+#summary-list li:last-child {
+  border-bottom: none;
+}
+
+/* Estilos específicos para PDF */
+@media print {
+  body {
+    background: none;
+  }
+  .estimate {
+    box-shadow: none;
+    border: none;
+  }
+}

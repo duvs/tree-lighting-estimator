@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tree Lighting Estimate</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/estimate.css" />
+  </head>
+  <body>
+    <header>
+      <img src="img/logo-epic-white.png" alt="Logo EPIC" />
+      <h1>Tree Lighting Estimate</h1>
+    </header>
+    <main>
+      <button id="downloadPdfBtn">Download PDF</button>
+      <div class="estimate">
+        <section id="pdfHeader">
+          <img src="img/logo-epic.png" alt="Logo EPIC" />
+          <div>
+            <p>Southwest Ranches, FL 33332, USA</p>
+            <p>+1 (561) 541-0202</p>
+          </div>
+        </section>
+
+        <hr />
+
+        <section class="client-info">
+          <h3>Client Information</h3>
+          <p><strong>Name:</strong> <span id="clientNameDisplay"></span></p>
+          <p><strong>Phone:</strong> <span id="clientPhoneDisplay"></span></p>
+          <p>
+            <strong>Address:</strong> <span id="clientAddressDisplay"></span>
+          </p>
+          <p><strong>Email:</strong> <span id="clientEmailDisplay"></span></p>
+        </section>
+
+        <hr />
+
+        <section class="estimate-details">
+          <h3>Estimate Details</h3>
+          <ul id="summary-list"></ul>
+
+          <p>
+            <strong>Total Estimate: </strong> $<span id="total-price"></span>
+          </p>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; 2025 EPIC Landscaping</p>
+    </footer>
+
+    <!-- Librería para convertir a PDF -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script src="js/estimate.js"></script>
+  </body>
+</html>
